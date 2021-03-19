@@ -20,30 +20,37 @@
     <!-- Our main container -->
     <div class="container">
         <!--Introduction header-->
-        <div id="label">
+        <div class="p-3 bg-info text-center">
             <h1>Populum Frontend Case</h1>
-            <h4>By: William Bergekrans</h4>
         </div>
         <!-- The main chart -->
-        <div>
-            <canvas id="myChart"></canvas>
+        <div class="mb-5 mt-5">
+            <!-- Canvas element is where the chart is rendered
+            aria-label and role is for screen reader transparancy -->
+            <canvas id="mainChart" aria-label="Chart area", role="img"></canvas>
         </div>
-
-        <!-- Footer element for design purposes -->
-        <div class="card">
+    </div>
+    <!-- Footer element for design purposes -->
+    <footer >
+        <div class="card text-center">
             <div class="card-header">
-              Quote
+              Populum - Visualising Your Happiness
             </div>
             <div class="card-body">
-              <blockquote class="blockquote mb-0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-              </blockquote>
+              <h5 class="card-title">Learn more about how you can use data to drive sustainability!</h5>
+              <p class="card-text">Use graphs to build a more sustainable company. For more information and success stories go to Populum.io. </p>
+              <a href="https://populum.io/" class="btn btn-primary">Populum.io</a>
+            </div>
+            <div class="card-footer text-muted">
+              Author: William Bergekrans
             </div>
           </div>
-    </div>
+    </footer>
 
-    <!--chart.js connection-->
+    <!-- Scripts -->
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <!-- Link with main.js -->
     <script src="graph.js"></script>
