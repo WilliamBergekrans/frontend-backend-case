@@ -1,0 +1,296 @@
+[
+  {
+    "name": "Company",
+    "employees": 283,
+    "responseRate": 0.73,
+    "index": 63,
+    "indexChange": 2.15
+  },
+  {
+    "name": "Manager 25",
+    "employees": 24,
+    "responseRate": 0.46,
+    "index": 70,
+    "indexChange": 1.23
+  },
+  {
+    "name": "Manager 37",
+    "employees": 17,
+    "responseRate": 0.24,
+    "index": 71,
+    "indexChange": 2.93
+  },
+  {
+    "name": "Manager 33",
+    "employees": 13,
+    "responseRate": 0.85,
+    "index": 68,
+    "indexChange": 0.52
+  },
+  {
+    "name": "Manager 17",
+    "employees": 9,
+    "responseRate": 0.78,
+    "index": 65,
+    "indexChange": -2.38
+  },
+  {
+    "name": "Manager 32",
+    "employees": 9,
+    "responseRate": 0.78,
+    "index": 59,
+    "indexChange": 2.06
+  },
+  {
+    "name": "Manager 38",
+    "employees": 9,
+    "responseRate": 0.89,
+    "index": 71,
+    "indexChange": 0
+  },
+  {
+    "name": "Manager 1",
+    "employees": 8,
+    "responseRate": 0.88,
+    "index": 70,
+    "indexChange": 7.34
+  },
+  {
+    "name": "Manager 7",
+    "employees": 8,
+    "responseRate": 0.88,
+    "index": 45,
+    "indexChange": -3.17
+  },
+  {
+    "name": "Manager 26",
+    "employees": 8,
+    "responseRate": 0.75,
+    "index": 56,
+    "indexChange": 5.56
+  },
+  {
+    "name": "Manager 34",
+    "employees": 8,
+    "responseRate": 0.88,
+    "index": 63,
+    "indexChange": -0.26
+  },
+  {
+    "name": "Manager 41",
+    "employees": 8,
+    "responseRate": 1,
+    "index": 79,
+    "indexChange": -5.75
+  },
+  {
+    "name": "Manager 10",
+    "employees": 7,
+    "responseRate": 1,
+    "index": 67,
+    "indexChange": 6.35
+  },
+  {
+    "name": "Manager 11",
+    "employees": 7,
+    "responseRate": 1,
+    "index": 84,
+    "indexChange": -2.91
+  },
+  {
+    "name": "Manager 12",
+    "employees": 7,
+    "responseRate": 0.86,
+    "index": 78,
+    "indexChange": -0.93
+  },
+  {
+    "name": "Manager 14",
+    "employees": 6,
+    "responseRate": 0.83,
+    "index": 58,
+    "indexChange": -6.11
+  },
+  {
+    "name": "Manager 15",
+    "employees": 6,
+    "responseRate": 0.83,
+    "index": 72,
+    "indexChange": 5.56
+  },
+  {
+    "name": "Manager 20",
+    "employees": 6,
+    "responseRate": 0.83,
+    "index": 68,
+    "indexChange": 4.56
+  },
+  {
+    "name": "Manager 30",
+    "employees": 6,
+    "responseRate": 0.67,
+    "index": 50,
+    "indexChange": -8.83
+  },
+  {
+    "name": "Manager 39",
+    "employees": 6,
+    "responseRate": 1,
+    "index": 64,
+    "indexChange": 1.85
+  },
+  {
+    "name": "Manager 2",
+    "employees": 5,
+    "responseRate": 1,
+    "index": 63,
+    "indexChange": 11.48
+  },
+  {
+    "name": "Manager 3",
+    "employees": 5,
+    "responseRate": 0.8,
+    "index": 23,
+    "indexChange": 0.51
+  },
+  {
+    "name": "Manager 9",
+    "employees": 5,
+    "responseRate": 0.8,
+    "index": 41,
+    "indexChange": 5.39
+  },
+  {
+    "name": "Manager 13",
+    "employees": 5,
+    "responseRate": 0.8,
+    "index": 61,
+    "indexChange": 2.78
+  },
+  {
+    "name": "Manager 19",
+    "employees": 5,
+    "responseRate": 0.8,
+    "index": 64,
+    "indexChange": -1.67
+  },
+  {
+    "name": "Manager 22",
+    "employees": 5,
+    "responseRate": 0.4,
+    "index": null,
+    "indexChange": null
+  },
+  {
+    "name": "Manager 27",
+    "employees": 5,
+    "responseRate": 0.2,
+    "index": null,
+    "indexChange": null
+  },
+  {
+    "name": "Manager 31",
+    "employees": 5,
+    "responseRate": 1,
+    "index": 58,
+    "indexChange": 2.22
+  },
+  {
+    "name": "Manager 35",
+    "employees": 5,
+    "responseRate": 0.6,
+    "index": 44,
+    "indexChange": -15.28
+  },
+  {
+    "name": "Manager 4",
+    "employees": 4,
+    "responseRate": 1,
+    "index": 50,
+    "indexChange": 9.26
+  },
+  {
+    "name": "Manager 6",
+    "employees": 4,
+    "responseRate": 0.75,
+    "index": 45,
+    "indexChange": -10.46
+  },
+  {
+    "name": "Manager 8",
+    "employees": 4,
+    "responseRate": 0.75,
+    "index": 65,
+    "indexChange": 0
+  },
+  {
+    "name": "Manager 16",
+    "employees": 4,
+    "responseRate": 0.5,
+    "index": null,
+    "indexChange": null
+  },
+  {
+    "name": "Manager 18",
+    "employees": 4,
+    "responseRate": 1,
+    "index": 61,
+    "indexChange": 1.85
+  },
+  {
+    "name": "Manager 21",
+    "employees": 4,
+    "responseRate": 0.5,
+    "index": null,
+    "indexChange": null
+  },
+  {
+    "name": "Manager 24",
+    "employees": 4,
+    "responseRate": 0.75,
+    "index": 57,
+    "indexChange": -1.85
+  },
+  {
+    "name": "Manager 28",
+    "employees": 4,
+    "responseRate": 0.75,
+    "index": 59,
+    "indexChange": 0
+  },
+  {
+    "name": "Manager 29",
+    "employees": 4,
+    "responseRate": 1,
+    "index": 64,
+    "indexChange": 6.94
+  },
+  {
+    "name": "Manager 5",
+    "employees": 3,
+    "responseRate": 0.33,
+    "index": null,
+    "indexChange": null
+  },
+  {
+    "name": "Manager 36",
+    "employees": 3,
+    "responseRate": 0.67,
+    "index": null,
+    "indexChange": null
+  },
+  {
+    "name": "Manager 40",
+    "employees": 3,
+    "responseRate": 1,
+    "index": 65,
+    "indexChange": 0
+  },
+  {
+    "name": "Manager 23",
+    "employees": 2,
+    "responseRate": 1,
+    "index": null,
+    "indexChange": null
+  }
+]

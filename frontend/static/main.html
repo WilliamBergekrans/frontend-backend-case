@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Stylesheets-->
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Chart.js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
+    <!--Link to my stylesheet -->
+    <link rel="stylesheet" href="main.css">
+    
+    <title> Populum - Visualizing your Happiness </title>  
+</head>
+
+<body>
+    <!-- Our main container -->
+    <div class="container">
+        <!--Introduction header-->
+        <div id="label">
+            <h1>Populum Frontend Case</h1>
+            <h4>By: William Bergekrans</h4>
+        </div>
+        <!-- The main chart -->
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <!-- Footer element for design purposes -->
+        <div class="card">
+            <div class="card-header">
+              Quote
+            </div>
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+    </div>
+
+    <!--chart.js connection-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- Link with main.js -->
+    <script src="graph.js"></script>
+</body>
+
+</html>
