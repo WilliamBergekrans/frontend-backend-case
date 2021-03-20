@@ -13,23 +13,25 @@
     <!--Link to my stylesheet -->
     <link rel="stylesheet" href="main.css">
     
-    <title> Populum - Visualizing your Happiness </title>  
+    <title> Populum - Graph </title>  
 </head>
 
 <body>
     <!-- Our main container -->
-    <div class="container">
+    <div>
         <!--Introduction header-->
-        <div class="p-3 bg-info text-center">
-            <h1>Populum Frontend Case</h1>
+        <div class="p-3 text-left" style="background-color: rgb(53, 129, 184,0.5);">
+            <h3>Populum Frontend Case</h3>
         </div>
+
         <!-- The main chart -->
-        <div class="mb-5 mt-5">
+        <div class="container p-4" style="position: relative; min-height: 60vh; min-width: 100vh;">
             <!-- Canvas element is where the chart is rendered
             aria-label and role is for screen reader transparancy -->
             <canvas id="mainChart" aria-label="Chart area", role="img"></canvas>
         </div>
     </div>
+
     <!-- Footer element for design purposes -->
     <footer >
         <div class="card text-center">
@@ -39,7 +41,7 @@
             <div class="card-body">
               <h5 class="card-title">Learn more about how you can use data to drive sustainability!</h5>
               <p class="card-text">Use graphs to build a more sustainable company. For more information and success stories go to Populum.io. </p>
-              <a href="https://populum.io/" class="btn btn-primary">Populum.io</a>
+              <a href="https://populum.io/" class="btn btn-info" target="_blank">Populum.io</a>
             </div>
             <div class="card-footer text-muted">
               Author: William Bergekrans
