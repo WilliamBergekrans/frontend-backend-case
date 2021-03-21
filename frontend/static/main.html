@@ -3,59 +3,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Stylesheets-->
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--Chart.js-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css" integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w==" crossorigin="anonymous" />
-    <!--Link to my stylesheet -->
-    <link rel="stylesheet" href="main.css">
-    
-    <title> Populum - Graph </title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Stylesheets-->
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!--Chart.js-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+    integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+    crossorigin="anonymous" />
+  <!--Link to my stylesheet -->
+  <link rel="stylesheet" href="main.css">
+
+  <title> Populum - Graph </title>
 </head>
 
 <body>
-    <!-- Our main container -->
-    <div>
-        <!--Introduction header-->
-        <div class="p-3 text-left" style="background-color: rgb(53, 129, 184,0.5);">
-            <h3>Populum Frontend Case</h3>
-        </div>
+  <!-- Our main container -->
 
-        <!-- The main chart -->
-        <div class="container p-4" style="position: relative; min-height: 60vh; min-width: 100vh;">
-            <!-- Canvas element is where the chart is rendered
-            aria-label and role is for screen reader transparancy -->
-            <canvas id="mainChart" aria-label="Chart area", role="img"></canvas>
-        </div>
+  <!--Introduction header-->
+  <div class="p-3 text-left" style="background-color: #006d77; color: azure;">
+    <h3>Populum Frontend Case</h3>
+  </div>
+
+  <!-- Information about the graph -->
+  <div class="container">
+    <div class="row text-center pt-4">
+      <div class="col-sm">
+        <h5>Toggle between the graphs to maximize your understanding. </h5>
+        <p>Data descrition below. </p>
+      </div>
     </div>
+    <!-- Buttons for toggling between different graphs -->
+    <div class="row pl-5 pr-5">
+      <div class="btn-group btn-group-toggle col-sm" data-toggle="buttons">
+        <label class="btn btn-outline-secondary active">
+          <!-- Button for the standard index vs responserate graph -->
+          <input type="radio" name="options" id="indexButton" autocomplete="off" checked> Index
+        </label>
+        <label class="btn btn-outline-secondary">
+          <!-- Button for toggling graph to view change for different employees -->
+          <input type="radio" name="options" id="indexChangeButton" autocomplete="off"> Index Change 
+        </label>
+        <label class="btn btn-outline-secondary">
+          <!-- Button for responserate vs employees graph -->
+          <input type="radio" name="options" id="responseRateButton" autocomplete="off"> Response Rate
+        </label>
+      </div>
+    </div> 
+  </div>
 
-    <!-- Footer element for design purposes -->
-    <footer >
-        <div class="card text-center">
-            <div class="card-header">
-              Populum - Visualising Your Happiness
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Learn more about how you can use data to drive sustainability!</h5>
-              <p class="card-text">Use graphs to build a more sustainable company. For more information and success stories go to Populum.io. </p>
-              <a href="https://populum.io/" class="btn btn-info" target="_blank">Populum.io</a>
-            </div>
-            <div class="card-footer text-muted">
-              Author: William Bergekrans
-            </div>
-          </div>
-    </footer>
+  <!-- The main chart -->
+  <div class="container p-4" style="position: relative; min-height: 60vh; min-width: 100vh;">
+    <!-- Canvas element is where the chart is rendered
+            aria-label and role is for screen reader transparancy -->
+    <canvas id="mainChart" aria-label="Chart area" , role="img"></canvas>
+  </div>
 
-    <!-- Scripts -->
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!--chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <!-- Link with main.js -->
-    <script src="graph.js"></script>
+  <!-- Data description section -->
+  <div class="container">
+    <div class="row text-center pt-2">
+      <div class="col-sm">
+        <h5>About the Data</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">The size of the circle represents the number of employees for each entity, hover the point to see number of employees. </li>
+          <li class="list-group-item">The name of the manager can be seen by hovering over the relevant point. </li>
+          <li class="list-group-item"><b>Index </b>is the overall result, between 0 and 100. Entities with null values are left out.</li>
+          <li class="list-group-item"><b>Index change</b> is the change in result since the last measurement was made.</li>
+          <li class="list-group-item"><b>Response rate </b> is the answer frequency of the entity. </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer element for design purposes -->
+  <footer class="border-top border-dark">
+    <div class="card text-center">
+      <div class="card-header">
+       
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Learn more about how you can use data to drive sustainability!</h5>
+        <p class="card-text">Use graphs to build a more sustainable company. For more information and success stories go
+          to Populum.io. </p>
+        <a href="https://populum.io/" class="btn" style="background-color: #006d77; color: azure;"
+          target="_blank">Populum.io</a>
+      </div>
+      <div class="card-footer text-muted">
+        Author: William Bergekrans
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <!-- JQuery -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!--chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- Link with main.js -->
+  <script src="graph.js"></script>
 </body>
 
 </html>
