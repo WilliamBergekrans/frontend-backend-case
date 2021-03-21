@@ -1,2 +1,3 @@
-/backend/caseApi/obj/*
-/backend/caseApi/obj/*
+/backend/caseApi/obj/
+/backend/caseApi/bin/
+/backend/caseApi/.vscode
