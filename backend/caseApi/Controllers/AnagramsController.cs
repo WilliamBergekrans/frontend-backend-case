@@ -30,26 +30,7 @@ namespace Anagrams.Controllers
             // stored together with the key. 
             // Dictionary for storing anagrams
             var anagrams = new Dictionary<string, List<int>>();
-            // Go through the list of possible anagram words to sort and map. 
-            for (int i = 0; i < posList.Count; i++)
-            {
-                // Sort the characters in the word. 
-                // This will act as the key in the dictionary. 
-                char[] characters = posList[i].ToCharArray();
-                Array.Sort(characters);
-                string s = new string(characters);
-                // Add to anagram dictionary 
-                // the key is the ordered word. 
-                // The data is the position in the original list. 
-                if (anagrams.ContainsKey(s))
-                {
-                    anagrams[s].Add(i);
-                }
-                else
-                {
-                    anagrams.Add(s, new List<int> { i });
-                }
-            }
+            anagrams = sortByAnagram(posList);
 
             // Create a variable to fill the real words into.
             var returnList = new List<List<string>>();
@@ -84,6 +65,36 @@ namespace Anagrams.Controllers
             var json = JsonSerializer.Serialize(returnList, options);
             // Return the JSON data. 
             return json;
+        }
+
+
+        // Method for sorting by anagrams in a dictionary. 
+        // Go through the list of possible anagram words to sort and map.
+        public Dictionary<string, List<int>> sortByAnagram(List<string> list)
+        {
+            // Create dictionary to store in. 
+            var anagrams = new Dictionary<string, List<int>>();
+            
+            for (int i = 0; i < list.Count; i++)
+            {
+                // Sort the characters in the word. 
+                // This will act as the key in the dictionary. 
+                char[] characters = list[i].ToCharArray();
+                Array.Sort(characters);
+                string s = new string(characters);
+                // Add to anagram dictionary 
+                // the key is the ordered word. 
+                // The data is the position in the original list. 
+                if (anagrams.ContainsKey(s))
+                {
+                    anagrams[s].Add(i);
+                }
+                else
+                {
+                    anagrams.Add(s, new List<int> { i });
+                }
+            }
+            return anagrams; 
         }
 
         // Method for loading data from text file. 
