@@ -1,4 +1,4 @@
-# populum-case
+# Small mock projects
 Author: William Bergekrans
 
 I have done both the Frontend and Backend case. Short description below. 
